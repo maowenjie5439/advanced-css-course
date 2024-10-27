@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* 元素的宽高计算包括boder和content */
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    /* 让元素的宽高计算包括boder和content */
+    box-sizing: border-box;
+} 

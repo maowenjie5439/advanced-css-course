@@ -1,0 +1,38 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+            to right bottom,
+            $color-primary-light,
+            $color-primary-dark
+        ),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: relative;
+
+    &__logo-box {
+        /* 绝对定位，相对定位的父元素header */
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__logo:hover {
+        /* 动画 */
+        animation: moveInRight 1s ease-out;
+    }
+
+    &__text-box {
+        /* 绝对定位，相对定位的父元素header */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        /* 移动自身宽度和高度的50% */
+        transform: translate(-50%, -50%);
+    }
+}
